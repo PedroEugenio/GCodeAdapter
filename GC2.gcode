@@ -1,0 +1,1 @@
+<_io.TextIOWrapper name='GC.gcode' mode='r' encoding='cp1252'>
