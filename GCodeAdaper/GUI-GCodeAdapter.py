@@ -55,12 +55,16 @@ def processFile(content, fileOut="out.txt"):
         if word in x and initLayer == True:
             counter += 1
             content.insert(i + 1, "G91; Put in relative mode\n"
-                                  "G1 Z2; Lower bed by 10mm\n"
+                                  "G1 F3000 E-10; retract\n"
+                                  "G1 F5000 Z5; Lower bed by 10mm\n"
                                   "G90; Put in absolute mode\n"
-                                  "G1 X0 Y0; Home\n"
+                                  "G1 F9000 X0 Y235.0; Back Home\n"
+                                  "G4 P500; Wait"
                                   "G91; Put in relative mode\n"
-                                  "G1 Z-2; Raise the bed back up 10mm\n"
-                                  "G90; Put back in absolute mode\n")
+                                  #"G1 F3000 E10; extrude\n"
+                                  "G1 F5000 Z-5; Raise the bed back up 10mm\n"
+                                  "G90; Put back in absolute mode\n"
+            )
             # print("Word Position: "+str(i))
         fout.write(content[i])
     fout.close()
