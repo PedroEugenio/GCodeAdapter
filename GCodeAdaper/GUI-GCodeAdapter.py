@@ -35,28 +35,32 @@ def readFile(filename):
 
 
 def askForNameFileOut():
-    filedialog.asksaveasfilename(title="Save File",
+    return filedialog.asksaveasfilename(title="Save File",
                                  filetypes=(("GCode files", "*.gcode"), ("Text Files", "*.txt"), ("all files", "*.*")))
-
 
 def processFile(content, fileOut="out.txt"):
     counter = 0
     lines = 0
     initLayer = False
-    word = "Z"
+    word = ";LAYER:"
     # Analyze the content
     filenameOut = str(askForNameFileOut())
     fout = open(filenameOut, "w")
+    print(filenameOut+"\n")
     for i, x in enumerate(content):
-        if lines < 37:
-            print(content[i])
         lines += 1
         if ";LAYER:0" in x:
             initLayer = True
             print("Find Initial Layer!")
         if word in x and initLayer == True:
             counter += 1
-            content.insert(i + 1, "Geno\n")
+            content.insert(i + 1, "G91; Put in relative mode\n"
+                                  "G1 Z2; Lower bed by 10mm\n"
+                                  "G90; Put in absolute mode\n"
+                                  "G1 X0 Y0; Home\n"
+                                  "G91; Put in relative mode\n"
+                                  "G1 Z-2; Raise the bed back up 10mm\n"
+                                  "G90; Put back in absolute mode\n")
             # print("Word Position: "+str(i))
         fout.write(content[i])
     fout.close()

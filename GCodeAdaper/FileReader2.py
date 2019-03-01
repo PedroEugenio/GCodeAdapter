@@ -1,6 +1,6 @@
 import time
 
-filename = "C:/Users/asus/Desktop/Python101/GC.gcode"
+filename = "GC.gcode"
 #filename = "hello.txt"
 word = input("What do you want to find?\n")
 
@@ -20,8 +20,6 @@ initLayer = False
 start_time=time.time()
 fout = open("helloOut.txt", "w")
 for i,x in enumerate(content):
-    if lines < 37:
-        print(content[i])
     lines +=1
     if ";LAYER:0" in x:
         initLayer = True
