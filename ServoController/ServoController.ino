@@ -18,8 +18,10 @@ void loop() {
   //state = digitalRead(pinSwitch);
   Serial.println(digitalRead(pinSwitch));
   if(digitalRead(pinSwitch) == 0){
-    positionServo = 20;
+    positionServo = 30;
     servo.write(positionServo);
-    delay(1300);
+      delay(50);
   }
+  positionServo = 0;
+  delay(500);
 }
