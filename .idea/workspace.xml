@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af2375e1-6871-4e59-8743-e1b7ab544683" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="af2375e1-6871-4e59-8743-e1b7ab544683" name="Default Changelist" comment="New layout and functional clear button&#10;Added entries for delay time and retraction length, but not functional (TODO)">
       <change beforePath="$PROJECT_DIR$/GCodeAdaper/GC2.gcode" beforeDir="false" afterPath="$PROJECT_DIR$/GCodeAdaper/GC2.gcode" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GCodeAdaper/GUI-GCodeAdapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/GCodeAdaper/GUI-GCodeAdapter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServoController/ServoController.ino" beforeDir="false" afterPath="$PROJECT_DIR$/ServoController/ServoController.ino" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GCodeAdaper/GUI-GCodeAdapter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1548">
-              <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+            <state relative-caret-position="144">
+              <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
               <folding>
                 <element signature="e#99#119#0" expanded="true" />
               </folding>
@@ -30,6 +28,9 @@
     </leaf>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>filename</find>
+    </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
@@ -162,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551534798483</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="New layout and functional clear button&#10;Added entries for delay time and retraction length, but not functional (TODO)">
+      <created>1551874496956</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1551874496956</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -188,7 +196,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917964" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917964" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32917964" />
@@ -200,7 +208,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rectraction speed and length adjusted" />
     <MESSAGE value="New TODO's to achieve" />
-    <option name="LAST_COMMIT_MESSAGE" value="New TODO's to achieve" />
+    <MESSAGE value="New layout and functional clear button&#10;Added entries for delay time and retraction length, but not functional (TODO)" />
+    <option name="LAST_COMMIT_MESSAGE" value="New layout and functional clear button&#10;Added entries for delay time and retraction length, but not functional (TODO)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GCodeAdaper/FileReader2.py">
@@ -212,8 +221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GCodeAdaper/GUI-GCodeAdapter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1548">
-          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+        <state relative-caret-position="144">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
           <folding>
             <element signature="e#99#119#0" expanded="true" />
           </folding>
