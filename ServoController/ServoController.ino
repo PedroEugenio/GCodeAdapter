@@ -22,6 +22,4 @@ void loop() {
     servo.write(positionServo);
       delay(50);
   }
-  positionServo = 0;
-  delay(500);
 }

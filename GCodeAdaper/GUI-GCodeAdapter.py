@@ -2,6 +2,7 @@
 #  DEVELOPED BY PEDRO EUGÉNIO  #
 ################################
 import tkinter as tk
+from tkinter import *
 from tkinter import filedialog
 
 # TODO
@@ -15,7 +16,8 @@ from tkinter import filedialog
 
 window = tk.Tk()
 window.title("GUI-GCode Adapter")
-window.geometry('400x500')
+window.geometry('500x500')
+window.resizable(width=False, height=False)
 
 
 # ----Functions----
@@ -81,29 +83,68 @@ def convertfunc():
 def savefunc():
     processFile(content)
 
+def clearfunc():
+    contentText.delete("1.0","end")
+
+
+# ----Frames----
+topFrame = tk.Frame(window,width=window.winfo_width(), height=50)
+topFrame.pack(side=TOP)
+middleFrame = tk.Frame(window)
+middleFrame.pack(side=TOP, pady=20)
+bottomFrame = tk.Frame(window, relief=SUNKEN,borderwidth=2)
+bottomFrame.pack(side=LEFT, pady=20, padx=10)
+rightFrame = tk.Frame(window, relief=SUNKEN)
+rightFrame.pack(side=LEFT, padx=30)
 
 # ----Labels----
-title = tk.Label(window, text="GUI-GCode Adapter by Pedro Eugénio")
-title.grid(column=1, row=0)
+title = tk.Label(topFrame, text="GUI-GCode Adapter by Pedro Eugénio", relief=RAISED,borderwidth=2)
+#title.grid(column=1, row=0)
+title.pack(side=TOP,pady=5)
+
+delayLabel = tk.Label(topFrame, text="Delay Time: ")
+delayLabel.pack(side=LEFT,pady=5)
+
+delayTimeText = tk.Entry(topFrame)
+delayTimeText.pack(side=LEFT);
+
+retractionLabel = tk.Label(topFrame, text="Retraction Length (mm): ")
+retractionLabel.pack(side=LEFT,pady=5)
+retractionText = tk.Entry(topFrame)
+retractionText.pack(side=LEFT)
 
 filename = tk.StringVar()
-pathlabel2 = tk.Label(window, textvariable=filename)
-pathlabel2.grid(column=1, row=1)
+pathlabel2 = tk.Label(bottomFrame, textvariable=filename)
+#pathlabel2.grid(column=1, row=1)
+pathlabel2.pack(side = TOP)
 
 # ----Buttons----
-loadButton = tk.Button(window, text="Load", command=browsefunc)
-loadButton.grid(column=0, row=1)
+loadButton = tk.Button(middleFrame, text="Load", command=browsefunc)
+#loadButton.grid(column=0, row=1,columnspan=2)
+loadButton.pack(side = LEFT,fill=BOTH,expand=True)
 
-convertButton = tk.Button(window, text="Convert", command=convertfunc)
-convertButton.grid(column=0, row=2)
+convertButton = tk.Button(middleFrame, text="Convert", command=convertfunc)
+#convertButton.grid(column=0, row=2,columnspan=2)
+convertButton.pack(side = LEFT,fill=BOTH,expand=True)
 
-saveButton = tk.Button(window, text="Save", command=savefunc)
-saveButton.grid(column=0, row=3)
+saveButton = tk.Button(middleFrame, text="Save", command=savefunc)
+#saveButton.grid(column=0, row=3, columnspan=2)
+saveButton.pack(side = LEFT, fill=BOTH,expand=True)
+
+clearButton = tk.Button(middleFrame, text="Clear", command=clearfunc)
+#saveButton.grid(column=0, row=3, columnspan=2)
+clearButton.pack(side = LEFT, fill=BOTH,expand=True)
 
 # ----Text----
-contentText = tk.Text(window, width=30, height=20)
-contentText.grid(column=1, row=2)
+contentText = tk.Text(bottomFrame, height=20)
+#contentText.grid(column=1, row=2)
+contentText.pack(fill=BOTH, expand=True, pady=10)
 
 # ----Entries----
+
+
+
+window.update_idletasks()
+print(window.winfo_width())
 
 window.mainloop()

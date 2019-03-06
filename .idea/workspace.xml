@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="af2375e1-6871-4e59-8743-e1b7ab544683" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GCodeAdaper/GC2.gcode" beforeDir="false" afterPath="$PROJECT_DIR$/GCodeAdaper/GC2.gcode" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GCodeAdaper/GUI-GCodeAdapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/GCodeAdaper/GUI-GCodeAdapter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCodeAdaper/out_xyzCalibration_cube.gcode" beforeDir="false" afterPath="$PROJECT_DIR$/GCodeAdaper/out_xyzCalibration_cube.gcode" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServoController/ServoController.ino" beforeDir="false" afterPath="$PROJECT_DIR$/ServoController/ServoController.ino" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +18,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GCodeAdaper/GUI-GCodeAdapter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="1548">
+              <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+              <folding>
+                <element signature="e#99#119#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,8 +46,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="413" />
-    <option name="y" value="-1102" />
+    <option name="x" value="578" />
+    <option name="y" value="-1103" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -152,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551463433565</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="New TODO's to achieve">
+      <created>1551534798483</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551534798483</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -173,7 +183,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32917964" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23779854" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -189,7 +199,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rectraction speed and length adjusted" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rectraction speed and length adjusted" />
+    <MESSAGE value="New TODO's to achieve" />
+    <option name="LAST_COMMIT_MESSAGE" value="New TODO's to achieve" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GCodeAdaper/FileReader2.py">
@@ -201,8 +212,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GCodeAdaper/GUI-GCodeAdapter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="1548">
+          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+          <folding>
+            <element signature="e#99#119#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
