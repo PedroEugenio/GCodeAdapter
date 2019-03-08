@@ -58,7 +58,6 @@ def processFile(content, fileOut="out.txt"):
         lines += 1
         if ";LAYER:0" in x:
             initLayer = True
-            print("Find Initial Layer!")
         if word in x and initLayer == True:
             counter += 1
             content.insert(i + 1, "G91; Put in relative mode\n"
@@ -86,6 +85,7 @@ def showfunc():
 
 def savefunc():
     processFile(content)
+    messagebox.showwarning("Save File", "File Saved Successfully")
 
 def clearfunc():
     contentText.delete("1.0","end")
