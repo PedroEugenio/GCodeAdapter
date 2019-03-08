@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af2375e1-6871-4e59-8743-e1b7ab544683" name="Default Changelist" comment="New layout and functional clear button&#10;Added entries for delay time and retraction length, but not functional (TODO)">
-      <change beforePath="$PROJECT_DIR$/GCodeAdaper/GC2.gcode" beforeDir="false" afterPath="$PROJECT_DIR$/GCodeAdaper/GC2.gcode" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCodeAdaper/GUI-GCodeAdapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/GCodeAdaper/GUI-GCodeAdapter.py" afterDir="false" />
-    </list>
+    <list default="true" id="af2375e1-6871-4e59-8743-e1b7ab544683" name="Default Changelist" comment="New layout and functional clear button&#10;Added entries for delay time and retraction length, but not functional (TODO)" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GCodeAdaper/GUI-GCodeAdapter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+            <state relative-caret-position="414">
+              <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
               <folding>
                 <element signature="e#99#119#0" expanded="true" />
               </folding>
@@ -184,14 +181,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-1088" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16067538" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23779854" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23779854" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -221,8 +217,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GCodeAdaper/GUI-GCodeAdapter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+        <state relative-caret-position="414">
+          <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
           <folding>
             <element signature="e#99#119#0" expanded="true" />
           </folding>
