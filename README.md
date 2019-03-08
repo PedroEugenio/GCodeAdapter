@@ -2,6 +2,8 @@
 
 Simple gcode editor, to make time lapses from 3D prints. It modifies the gcode to go to the end corner of the bed and activate the end stop switch, to trigger the camera shutter. On every change on Z layer, executes some gcode commands to go to that position, set the retraction length and wait X (ms) to take the photo.
 
+Example video: https://youtu.be/baKihMLoD5E
+
 ![ecra2](https://user-images.githubusercontent.com/6796382/54046496-7004b000-41cc-11e9-9a10-e89fb255f0b0.PNG)
 
 # Running
